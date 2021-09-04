@@ -1,0 +1,75 @@
+:root {
+  --bg-color: #202020;
+  --accent-color: #7c83fd;
+  --secondary-color: #ffc947;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent-color);
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 1rem 1.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav {
+  background-color: var(--accent-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 1rem;
+  transform: translateX(110%);
+  transition: transform 0.3s ease-in-out;
+}
+
+button.active {
+  transform: translateX(-100px);
+}
+
+nav.active {
+  transform: translateX(0);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}

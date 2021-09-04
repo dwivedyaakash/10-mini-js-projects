@@ -1,0 +1,57 @@
+:root {
+  --bg-color: #202020;
+  --accent-color: #7c83fd;
+  --secondary-color: #ffc947;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.toast {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+}

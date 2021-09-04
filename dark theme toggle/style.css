@@ -1,0 +1,64 @@
+:root {
+  --bg-color: #ffffff;
+  --bg-dark: #2c2c2c;
+  --accent-color: #7c83fd;
+  --secondary-color: #ffc947;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #000000;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+body.dark {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+}
+
+.container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+label {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  user-select: none;
+  transition: background 0.3s linear;
+}
+
+body.dark label {
+  background-color: #ffffff;
+}
+
+input {
+  visibility: hidden;
+}

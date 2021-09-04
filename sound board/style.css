@@ -1,0 +1,40 @@
+:root {
+  --bg-color: #202020;
+  --accent-color: #7c83fd;
+  --secondary-color: #ffc947;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin: 1rem;
+  padding: 1rem;
+}
